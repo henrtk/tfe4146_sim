@@ -23,30 +23,30 @@ or with ssh:
 To make sure that the simulation's package dependencies' installation is clean and without incompabilities with respect to your global Python installation (that means, the one you usually get when you type python or pip into the terminal), we will opt for a *virtual environment*. This instantiates a python version which is only active in this project. To do so, enter the following into terminal:
 
 ```bash
-cd .\\tfe4146_sim # move/change directory (cd) into the installed project folder
-python -m venv tfe4146_venv # creates a virtual environment for this project, with name tfe4146_venv
-# using Windows:
-.\\tfe4146\\Scripts\\activate 
-# using MacOS/Linux
-$ source tfe4146/bin/activate
+    cd .\\tfe4146_sim # move/change directory (cd) into the installed project folder
+    python -m venv tfe4146_venv # creates a virtual environment for this project with name tfe4146_venv
+    # using Windows, run the following command:
+    tfe4146_venv\\Scripts\\activate 
+    # using MacOS/Linux:
+    source tfe4146/bin/activate
 ```
 
-The terminal (atleast when using WindowsPowerShell) will now be marked with (tfe4146_venv), indicating that you're using the virtual environment. To deactivate it, just enter the command `deactivate`.
+The terminal (atleast when using WindowsPowerShell) will now be marked with (tfe4146_venv), indicating that you're working within the virtual environment. The virtual environment has its own separate Python installation. To deactivate it, enter the command `deactivate`.
 
-You may now install the required dependencies
+You may now install the required packages to the local Python version using
 
 ```bash
     pip install -r requirements.txt
 ```
 
-Jupyter is installed by the required packages. Run the following command from you activated virtual environment to open a Jupyter server by using
+Jupyter is automatically installed as a dependency of the required packages. Run the following command from your activated virtual environment to open a Jupyter server by using
 ```bash
-jupyter-notebook
+    jupyter-notebook
 ```
 which should open up your browser in Jupyter, where you may move to `/notebooks/pn_junction`.ipynb to start working! 
 
 
-If you prefer to use Jupyter notebooks outside of a browser, like VSCode, you may do so by selecting the virtual environment's python installation, `.\tfe4146_venv\Scripts\python.exe`, as the notebook's kernel. To view it as the recommended kernel option in the VSCode extension for Jupyter, you need to open the `.\tfe4146_sim\`-folder in VSCode, and then select it as the kernel for the notebook.
+If you prefer to use Jupyter notebooks outside of a browser, like VSCode, you may do so by selecting the virtual environment's python installation, `.\tfe4146_venv\Scripts\python.exe`, as the notebook's kernel. To view it as a kernel option in the VSCode extension for Jupyter, you need to open the `.\tfe4146_sim\`-folder in VSCode. When doing so, the local Python version will show up as the recommended Jupyter kernel. Select it as the kernel for the notebook.
 
 ## Usage
 
