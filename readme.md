@@ -28,7 +28,7 @@ To make sure that the simulation's package dependencies' installation is clean a
     # using Windows, run the following command:
     tfe4146_venv\\Scripts\\activate 
     # using MacOS/Linux:
-    source tfe4146/bin/activate
+    source tfe4146_venv/bin/activate
 ```
 
 The terminal (atleast when using WindowsPowerShell) will now be marked with (tfe4146_venv), indicating that you're working within the virtual environment. The virtual environment has its own separate Python installation. To deactivate it, enter the command `deactivate`.
