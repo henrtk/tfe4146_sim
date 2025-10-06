@@ -41,7 +41,7 @@ You may now install the required packages to the local Python version using
     pip install -r requirements.txt
 ```
 
-> **_NOTE:_** If there is trouble installing pandas and/or kiwisolver (ignore this otherwise) in the requirements, first try to install Microsoft Visual Studio Build Tools as prompted in the error message using https://visualstudio.microsoft.com/visual-cpp-build-tools/. You may have to restart your computer for the changes to take effect. If this also fails, go into requirements.txt and delete the pandas and kiwisolver entries, save the changes, and try the above command again. Experience shows that the simulation *will work* without these, but, the interactive plotting in Jupyter may give (non-significant, but annoying) errors which are possible to ignore. 
+> **_NOTE:_** If there is trouble installing pandas and/or kiwisolver (ignore this otherwise) in the requirements, first try to install Microsoft Visual Studio Build Tools as prompted in the error message using https://visualstudio.microsoft.com/visual-cpp-build-tools/. You may have to restart your computer for the changes to take effect. If this also fails, go into requirements.txt and delete the pandas and kiwisolver entries, save the changes, and try the above command again. Experience shows that the simulation *will work* without these, but, the interactive plotting in Jupyter may give (non-significant, but annoying) errors which are possible to ignore. Replacing `%matplotlib widget` with `%matplotlib inline` avoids them entirely. 
 
 
 Jupyter is automatically installed as a dependency of the required packages. Run the following command from your activated virtual environment to open a Jupyter server using the local Python version by entering
