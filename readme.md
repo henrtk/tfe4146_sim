@@ -20,7 +20,9 @@ or with ssh:
     git clone git@github.com:henrtk/tfe4146_sim.git
 ```
 
-To make sure that the simulation's package dependencies' installation is clean and without incompabilities with respect to your global Python installation (that means, the one you usually get when you type python or pip into the terminal), we will opt for a *virtual environment*. This instantiates a python version which is only active in this project. To do so, enter the following into terminal:
+To make sure that the simulation's package dependencies' installation is clean and without incompabilities with respect to your global Python installation (that means, the one you usually get when you type python or pip into the terminal), we will opt for a *virtual environment*. This instantiates a python version which is only active in this project. *Note* This has only been tested to work for Python 3.10 to 3.12, please consider making sure that the python installation which is called when you enter the command `python` has the correct version. If you have multiple Python installations in your system, you may try calling for example `python3.12` or `path/to/your/pythoninstallation/python.exe` instead of `python`.
+
+To create a virtual environment, enter the following into terminal:
 
 ```bash
     cd .\\tfe4146_sim # move/change directory (cd) into the installed project folder
