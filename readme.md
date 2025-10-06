@@ -39,11 +39,14 @@ You may now install the required packages to the local Python version using
     pip install -r requirements.txt
 ```
 
-Jupyter is automatically installed as a dependency of the required packages. Run the following command from your activated virtual environment to open a Jupyter server by using
+> **_NOTE:_** If there is trouble installing pandas and/or kiwisolver (ignore this otherwise) in the requirements, first try to install Microsoft Visual Studio Build Tools as prompted in the error message using https://visualstudio.microsoft.com/visual-cpp-build-tools/. You may have to restart your computer for the changes to take effect. If this also fails, go into requirements.txt and delete the pandas and kiwisolver entries, save the changes, and try the above command again. Experience shows that the simulation *will work* without these, but, the interactive plotting in Jupyter may give (non-significant, but annoying) errors which are possible to ignore. 
+
+
+Jupyter is automatically installed as a dependency of the required packages. Run the following command from your activated virtual environment to open a Jupyter server using the local Python version by entering
 ```bash
     jupyter-notebook
 ```
-which should open up your browser in Jupyter, where you may move to `/notebooks/pn_junction`.ipynb to start working! 
+into the terminal, which should open up your browser in Jupyter, where you may move to `/notebooks/pn_junction`.ipynb to start working! 
 
 
 If you prefer to use Jupyter notebooks outside of a browser, like VSCode, you may do so by selecting the virtual environment's python installation, `.\tfe4146_venv\Scripts\python.exe`, as the notebook's kernel. To view it as a kernel option in the VSCode extension for Jupyter, you need to open the `.\tfe4146_sim\`-folder in VSCode. When doing so, the local Python version will show up as the recommended Jupyter kernel. Select it as the kernel for the notebook.
